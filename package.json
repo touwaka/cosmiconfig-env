@@ -1,0 +1,31 @@
+{
+  "name": "cosmiconfig-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/CosmiconfigEnv.js",
+  "config": {
+    "src": "./src",
+    "dist": "./dist"
+  },
+  "scripts": {
+    "clean": "rm -rf $npm_package_config_dist",
+    "build": "npx babel $npm_package_config_src --out-dir $npm_package_config_dist --copy-files",
+    "test": "npm run build && node ./test",
+    "debug": "npm run build && node --inspect-brk ./test"
+  },
+  "keywords": [],
+  "author": "Jan.Gao",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.4.3",
+    "cosmiconfig": "^5.2.0",
+    "deepmerge": "^3.2.0",
+    "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.4.3"
+  }
+}

@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+.gitignore
+.babelrc
+lerna-debug.log
+
+# custom
+test.js
+
