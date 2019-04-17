@@ -1,6 +1,6 @@
 {
   "name": "cosmiconfig-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/CosmiconfigEnv.js",
   "config": {
@@ -13,6 +13,11 @@
     "test": "npm run build && node ./test",
     "debug": "npm run build && node --inspect-brk ./test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/touwaka/cosmiconfig-env.git"
+  },
+  "homepage": "https://github.com/touwaka/cosmiconfig-env#readme",
   "keywords": [],
   "author": "Jan.Gao",
   "license": "MIT",
